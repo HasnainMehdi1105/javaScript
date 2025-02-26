@@ -1,0 +1,336 @@
+.parent1 {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+ul {
+    display: flex;
+    justify-content:space-around;
+    list-style: none;
+    color: white;
+    margin: 0px 50px;
+}
+
+li{
+    display: flex;
+    justify-content: space-around;
+    margin: 0px 30px;
+}
+
+.child1{
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn1{
+    border-radius: 60px;
+    border-color: white;
+    color: white;
+    background-color: black;
+}
+
+.btn2{
+    border-radius: 60px;
+    border-color: red;
+    color: white;
+    background-color: red;
+}
+
+.head > h1{
+color: white;
+text-align: center;
+background-color: black;
+
+}
+
+.head > p{
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding-top: 20px;
+}
+
+.box1{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+    
+    
+}
+
+.btn3{
+    border-radius: 60px;
+    border-color: white;
+    color: white;
+    background-color: black;
+    width: 50%;
+    height: 50px;
+}
+
+.btn4{
+    border-radius: 60px;
+    border-color: white;
+    color: white;
+    background-color: black;
+    width: 50%;
+    height: 50px;
+}
+
+.btn5{
+    border-radius: 60px;
+    border-color: white;
+    color: white;
+    background-color: black;
+    width: 50%;
+    height: 50px;
+}
+
+
+
+.btn6{
+        position: absolute;
+        top: 260%;
+        left: 8%;
+        border-radius: 60px;
+        border-color: white;
+        color: white;
+        background-color: #0F0F0F;
+        width: 13%;
+        height: 7% ;
+
+    
+}
+
+.head2{
+    background-color: #0F0F0F;
+}
+
+.head2 > h1{
+    color: azure;
+    text-align: center;
+    font-size: 350%;
+    padding-top: 40px;
+
+    
+    
+}
+.head2 > p{
+
+    font-size: 250%;
+    color: white;
+    text-align: center;
+}
+
+.boxparent{
+    background-color: #0F0F0F;
+    padding-top: 30px;
+}
+
+.boxisl{
+    display: flex;
+    justify-content: space-around;
+}
+
+.boxnight{
+    display: flex;
+    justify-content: space-around;
+}
+
+.boxbahawalpur{
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn7{
+    width: 50%;
+    height: 40px;
+    background-color: #0F0F0F;
+    border-radius: 60px;
+    border-color: white;
+    color: white;
+}
+
+.btn8{
+    width: 50%;
+    height: 40px;
+    background-color: #0F0F0F;
+    border-radius: 60px;
+    border-color: white;
+    color: white;
+}
+
+.collection1{
+    display: flex;
+    justify-content: space-around;
+    padding-left: 9%;
+    padding-right: 9%;
+}
+
+.collection2{
+    display: flex;
+    justify-content: space-around;
+    padding-left: 9%;
+    padding-right: 9%;
+}
+
+.collection3{
+    display: flex;
+    justify-content: space-around;
+    padding-left: 9%;
+    padding-right: 9%;
+    
+}
+
+.btn9{
+    background-color: black;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+    margin-left: 115px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+/* Media Queries for Responsive Design */
+
+/* For tablets and mobiles */
+@media screen and (max-width: 1024px) {
+    .parent1 {
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center content horizontally */
+        text-align: center; /* Center text */
+        margin: 0 auto; /* Ensure proper centering */
+        padding-left: 10%;
+    }
+
+    .child1 ul {
+        display: flex;
+        flex-wrap: wrap; /* Wrap list items */
+        justify-content: center; /* Center list items */
+        padding: 0;
+        margin: 10px 0; /* Add consistent spacing */
+        padding-left: 10%;
+        padding-right: 20%;
+    }
+
+    .child1 ul li {
+        margin: 8px; /* Equal spacing for list items */
+        font-size: 13px; /* Consistent font size */
+    }
+
+    .btn1, .btn2 {
+        width: 50%; /* Buttons fit the screen width */
+        max-width: 400px; /* Prevent overly wide buttons */
+        margin: 10px auto; /* Center buttons and add spacing */
+        text-align: center;
+        border-radius: 20px;
+        height: 80px;
+        
+    }
+
+    .carousel{
+        width: 110%; /* Ensure images fit */
+
+    }
+
+    .box1 > div {
+        margin: 20px auto; /* Space between boxes */
+        width: 70%; /* Boxes fit within screen */
+        max-width: 600px; /* Limit box size */
+        text-align: center;
+    }
+
+    .head h1, .head p {
+        font-size: 1.5rem; /* Resize for readability */
+        margin: 10px 0; /* Consistent spacing */
+        text-align: center;
+    }
+
+    .boxparent {
+        display: flex;
+        flex-direction: column; /* Stack vertically */
+        gap: 20px; /* Equal spacing between items */
+        margin: 0 auto;
+        width: 95%; /* Center and fit within screen */
+        text-align: center;
+    }
+
+    .boxisl, .boxnight, .boxbahawalpur {
+        display: flex;
+        flex-direction: column; /* Stack content */
+        align-items: center; /* Center align items */
+        gap: 15px; /* Add spacing */
+    }
+
+    .CARDS {
+        padding: 20px; /* Consistent padding for all devices */
+        text-align: center; /* Center content */
+    }
+
+    .CARDS h1 {
+        font-size: 2.2rem; /* Resize for headings */
+        margin-bottom: 15px;
+    }
+
+    .collection1, .collection2, .collection3 {
+        display: flex;
+        flex-direction: column; /* Stack cards vertically */
+        gap: 20px; /* Add spacing between cards */
+        padding: 10px; /* Uniform padding */
+    }
+
+    .card1, .card2, .card3, .card4, .card5, .card6, .card7 {
+        margin: 0 auto; /* Center cards */
+        width: 90%; /* Cards fit within screen */
+        max-width: 400px; /* Prevent overly wide cards */
+    }
+
+    .card1 img, .card2 img, .card3 img {
+        width: 100%; /* Ensure images are responsive */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
+
+/* For smaller mobiles */
+@media screen and (max-width: 768px) {
+    .parent1 img {
+        width: 60%; /* Shrink logo for small screens */
+        margin: 0 auto; /* Center the logo */
+    }
+
+    .child1 ul li {
+        font-size: 14px; /* Adjust for readability */
+    }
+
+    .btn1, .btn2 {
+        font-size: 1rem; /* Resize button text */
+    }
+
+    .carousel-inner img {
+        max-height: 280px; /* Prevent overly tall carousel images */
+    }
+
+    .box1 > div {
+        width: 100%; /* Full width for small screens */
+    }
+
+    .head h1 {
+        font-size: 1.4rem; /* Adjust heading size */
+    }
+
+    .collection1, .collection2, .collection3 {
+        gap: 15px; /* Adjust spacing */
+    }
+}
